@@ -7,17 +7,17 @@ import java.util.UUID;
 public class Price implements EntityInterface {
     private UUID uuid;
     private Date date;
-    private BigDecimal price;
+    private Float price;
 
     public Price() {
     }
 
-    public Price(Date date, BigDecimal price) {
+    public Price(Date date, Float price) {
         this.date = date;
         this.price = price;
     }
 
-    public Price(UUID uuid, Date date, BigDecimal price) {
+    public Price(UUID uuid, Date date, Float price) {
         this.uuid = uuid;
         this.date = date;
         this.price = price;
